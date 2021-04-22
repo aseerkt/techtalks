@@ -4,7 +4,7 @@ import styles from '../styles/Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>Copyright &copy; tech-talks</p>
+      <p>Copyright &copy; tech-talks 2021</p>
       <p>
         <Link href='/about'>About this project</Link>
       </p>

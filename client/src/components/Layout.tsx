@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styles from '../styles/Layout.module.css';
 import Footer from './Footer';
 import Header from './Header';
+import Showcase from './Showcase';
 
 type LayoutProps = {
   title?: string;
@@ -15,6 +17,8 @@ const Layout: React.FC<LayoutProps> = ({
   keywords,
   children,
 }) => {
+  const router = useRouter();
+
   return (
     <div>
       <Head>
@@ -23,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({
         <meta name='keywords' content={keywords} />
       </Head>
       <Header />
+      {router.pathname === '/' && <Showcase />}
       <div className={styles.container}>{children}</div>
       <Footer />
     </div>
@@ -30,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({
 };
 
 Layout.defaultProps = {
-  title: 'Tech Talks | Find your favourite talks',
+  title: 'tech-talks | Find your favourite talks',
   description:
     'A place where you find talks and podcasts related to latest techs',
   keywords:

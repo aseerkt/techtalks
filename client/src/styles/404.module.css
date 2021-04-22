@@ -1,0 +1,17 @@
+.error {
+  text-align: center;
+  margin: 100px 0 200px;
+}
+
+.error h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 1rem !important;
+}
+
+.error h1 span {
+  font-size: inherit;
+  margin-right: 1rem;
+}
