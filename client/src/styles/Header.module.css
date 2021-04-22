@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #333;
+  height: 60px;
+  padding: 0 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+
+.header a:hover {
+  color: #000;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.logo {
+  color: #4d4de0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo a {
+  text-transform: lowercase;
+  font: inherit;
+  color: inherit;
+}
